@@ -14,20 +14,21 @@ main .content{
     overflow-y: scroll;
 }
 main .sidebar{
+    height: 100%;
+    width: auto;
     background-color:black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 .logo{
-    width: 60%;
-    margin-bottom: 15px;
+    width: 200px;
+    margin: 15px 0;
 }
 .app footer{
     min-height: 90px;
     background-color: #181818;
-    display: flex;
-    justify-content: space-between;
 }
 ul{
     list-style: none;
@@ -35,18 +36,25 @@ ul{
 }
 li{
     color: gray;
-    padding: 10px 30px;
-    font-size: 15px;
+    padding: 10px 25px ;
 }
-li:nth-child(5){
+
+ul:first-child li:nth-child(2){
+    color: white;
+    border-left: 2px greenyellow solid;
+}
+ul:first-child li:nth-child(5){
     color: white;
     font-size: 20px;
     margin-top: 10px;
 }
+.item{
+    display: flex;
+    align-items: flex-end;
+}  
 ul li:hover{
     color: white;
     cursor: pointer;
-    border-left: 2px greenyellow solid;
 }
 .fas{
     font-size: 30px;
@@ -66,4 +74,27 @@ ul:last-child li:first-child{
 ul:last-child li:last-child{
     padding: 10px 30px;
     color: white;
+}
+
+/*barra fissa*/
+.fisso{
+    background-color: rgba(0, 0, 0, .3);
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+button{
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 16px;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 50px;
+    border-color: white;
+    position: absolute;
+    right: 1%;
+    top: 25%;
+    cursor: pointer;
 }
