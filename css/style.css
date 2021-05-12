@@ -1,5 +1,6 @@
 .container-fluid{
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .app{
     max-height: 100vh;
@@ -14,10 +15,55 @@ main .content{
 }
 main .sidebar{
     background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    width: 50%;
+    margin-bottom: 15px;
 }
 .app footer{
     min-height: 90px;
     background-color: #181818;
     display: flex;
     justify-content: space-between;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    color: gray;
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+li:nth-child(5){
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+.fas{
+    font-size: 30px;
+    padding-right: 10px;
+}
+.far{
+    padding-right: 10px;
+}
+ul:last-child li:last-child .far{
+    font-size: 30px;
+}
+ul:last-child li:first-child{
+    border-bottom: gray 1px solid;
+    padding: 10px 0;
+    margin: 0 30px;
+}
+ul:last-child li:last-child{
+    padding: 10px 30px;
+    color: white;
 }
