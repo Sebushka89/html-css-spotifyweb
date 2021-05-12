@@ -30,20 +30,21 @@ main .sidebar{
     min-height: 90px;
     background-color: #181818;
 }
-ul{
+ul a{
     list-style: none;
     text-decoration: none;
+    display: block;
 }
-li{
+ul li a{
     color: gray;
-    padding: 10px 25px ;
+    padding: 10px 25px;
 }
 
-ul:first-child li:nth-child(2){
+ul:first-child li:nth-child(2) a{
     color: white;
     border-left: 2px greenyellow solid;
 }
-ul:first-child li:nth-child(5){
+ul:first-child li:nth-child(5) a{
     color: white;
     font-size: 20px;
     margin-top: 10px;
@@ -52,7 +53,7 @@ ul:first-child li:nth-child(5){
     display: flex;
     align-items: flex-end;
 }  
-ul li:hover{
+ul li:hover a{
     color: white;
     cursor: pointer;
 }
@@ -66,16 +67,14 @@ ul li:hover{
 ul:last-child li:last-child .far{
     font-size: 30px;
 }
-ul:last-child li:first-child{
-    border-bottom: gray 1px solid;
-    padding: 10px 0;
-    margin: 0 30px;
-}
-ul:last-child li:last-child{
-    padding: 10px 30px;
+ul:last-child li:last-child a{
+    padding: 10px 25px;
     color: white;
 }
-
+.sidebar hr{
+    border-color: gray;
+    margin: 0 15px;
+}
 /*barra fissa*/
 .fisso{
     background-color: rgba(0, 0, 0, .3);
@@ -103,4 +102,7 @@ button{
 button:hover{
     font-size: 16px;
     padding: 15px 35px;
+}
+.giu{
+    margin-top: 90px;
 }
