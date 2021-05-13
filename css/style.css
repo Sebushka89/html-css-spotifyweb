@@ -155,7 +155,7 @@ nav li {
     position: relative;
 }
 .item{
-    width: 225px;
+    width: 230px;
     height: 100%;
     margin: 20px 15px;
     text-align: center;
@@ -178,8 +178,8 @@ nav li {
     cursor: pointer;
 }
 .cover img{
-    width: 225px;
-    height: 225px;
+    width: 230px;
+    height: 230px;
 }
 .cover-text{
     color: white;
@@ -211,7 +211,109 @@ nav li {
 .app footer {
     min-height: 90px;
     background-color: #181818;
+    color: grey;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+/*footer*/
+footer ul {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+    
+footer img, footer i {
+    margin-right: 10px;
+}
+    
+footer img {
+    width: 70px;
+}
+       
+.left .info {
+    margin-right: 30px;
+    font-size: 16px;
+}
+    
+.left li:last-child {
+    display: flex;
+}
+    
+.info div {
+    font-size: 10px;
+}
+      
+.center {
+    flex-basis: 40%;  
+}
+    
+.center ul:first-child {
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+    
+.time-bar {
+    flex-grow: 1;
+}
+    
+.center li {
+    margin-right: 20px;
+}
+    
+.center li:last-child {
+    margin-right: 0;
+}
+    
+.center i {
+    font-size: 13px;
+    color:white;
+}
+    
+.center .time {
+    font-size: 10px;
+    color: lightgray;
+}
+    
+i.fa-play-circle {
+    font-size: 25px;
+    vertical-align: middle;
+    width: 30px;
+}
+       
+.barra {
+    height: 3px;
+    width: 100%;
+    background-color: gray;
+}
+    
+.barra2 {
+    height: 100%;
+    width: 30%;
+    background-color: lightgray;
+}
+       
+.right i {
+    color: lightgray;
+    font-size: 13px;
+    padding-right: 10px;
+}
+    
+.right {
+    flex-basis: 13%;
+    flex-shrink: 0;
+    min-width: 230px;
+}
+    
+.right li:last-child {
+    flex-basis: 100px;
+}
+
+
 @media only screen and (max-width: 576px) {
     .logo, .text, .playlist, hr {display: none;
     }
