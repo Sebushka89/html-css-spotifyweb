@@ -54,20 +54,31 @@ ul li a{
     color: gray;
     margin: 10px 15px;
 }
+.playlist a{
+    margin: 15px;
+}
 svg{
     fill: gray;
     width: 30px;
     vertical-align: middle;
 }
-svg:hover{
-    fill: white;
-}
-ul li a:hover {
+ul li a:hover{
     color: white;
     cursor: pointer;
+    opacity: 1;
+}
+ul li a:hover img{
+    color: white;
+    cursor: pointer;
+    opacity: 1;
 }
 .bottoni{
     margin-bottom: 25px;
+}
+.bot-icon{
+    width: 30px;
+    vertical-align: middle;
+    opacity: 0.5;
 }
 .fas{
     font-size: 40px;
@@ -80,6 +91,7 @@ ul li a:hover {
 i{
     vertical-align: middle;
 }
+
 /*barra fissa*/
 .fisso{
     background-color: rgba(0, 0, 0, .3);
@@ -111,6 +123,7 @@ button:hover{
     min-height: 90px;
     background-color: #181818;
 }
+
 @media only screen and (max-width: 576px) {
     .logo, .text, .playlist, hr {display: none;
     }
