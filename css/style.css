@@ -22,13 +22,27 @@ main .sidebar{
     justify-content: space-between;
     overflow: hidden;
 }
+.top-sidebar{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    color: white;
+    padding-left: 25px;
+    text-transform: uppercase;
+}
+.playlist{
+    overflow: auto;
+}
 .logo{
     width: 200px;
-    margin: 15px 0;
+    margin: 10px 25px;
+    fill: white;
 }
-.app footer{
-    min-height: 90px;
-    background-color: #181818;
+.small-logo{
+    width: 100%;
+    display: none;
 }
 ul a{
     list-style: none;
@@ -39,16 +53,6 @@ ul li a{
     color: gray;
     padding: 10px 25px;
 }
-
-ul:first-child li:nth-child(2) a{
-    color: white;
-    border-left: 2px greenyellow solid;
-}
-ul:first-child li:nth-child(5) a{
-    color: white;
-    font-size: 20px;
-    margin-top: 10px;
-}
 .item{
     display: flex;
     align-items: flex-end;
@@ -57,23 +61,22 @@ ul li:hover a{
     color: white;
     cursor: pointer;
 }
+.bottoni{
+    margin-bottom: 25px;
+}
 .fas{
-    font-size: 30px;
+    font-size: 40px;
     padding-right: 10px;
 }
 .far{
     padding-right: 10px;
 }
-ul:last-child li:last-child .far{
-    font-size: 30px;
-}
-ul:last-child li:last-child a{
-    padding: 10px 25px;
-    color: white;
-}
 .sidebar hr{
     border-color: gray;
     margin: 0 15px;
+}
+i{
+    vertical-align: middle;
 }
 /*barra fissa*/
 .fisso{
@@ -97,12 +100,12 @@ button{
     border-radius: 50px;
     border-color: white;
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 button:hover{
-    font-size: 16px;
-    padding: 15px 35px;
+    transform: scale(1.1);
 }
-.giu{
-    margin-top: 90px;
+.app footer{
+    min-height: 90px;
+    background-color: #181818;
 }
