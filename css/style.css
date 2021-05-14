@@ -18,7 +18,7 @@ main .content{
 }
 main .sidebar{
     height: 100%;
-    flex-basis: 280px;
+    flex-basis: 250px;
     flex-shrink: 1;
     flex-grow: 1;
     background-color:black;
@@ -242,7 +242,7 @@ ul li a{
 }
   
   .album-playing-container img {
-    width: 80px;
+    width: 30px;
     height: 100%;
     margin-right: 10px;
   }
