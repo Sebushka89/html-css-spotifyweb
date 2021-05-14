@@ -126,6 +126,7 @@ button{
 button:hover{
     transform: scale(1.1);
 }
+
 /*sezione content*/
 
 .music-nav li {
@@ -242,7 +243,7 @@ ul li a{
 }
   
   .album-playing-container img {
-    width: 30px;
+    width: 60px;
     height: 100%;
     margin-right: 10px;
   }
