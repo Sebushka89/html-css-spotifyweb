@@ -14,8 +14,8 @@
 <body>
 
     <div class="container-fluid app">
-        <main class="row">
-            <div class="sidebar col-xs-2 col-sm-4 col-md-4 col-lg-2">
+        <main>
+            <div class="sidebar ">
                 <div class="top-sidebar">
                     <div class="logo">
                         <img src="./img/logo.svg" alt="">
@@ -51,11 +51,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="content col-xs-10 col-sm-8 col-md-8 col-lg-10">
-                <div class="fisso col-xs-10 col-sm-8 col-md-8 col-lg-10">
+            <div class="content">
+                <div class=" row fisso">
                     <button>EFFETTUA L'UPGRADE</button>
                 </div>
-                <nav>
+                <nav class="music-nav">
                     <ul>
                         <li><a href="#"> IN EVIDENZA </a></li>
                         <li><a href="#"> PODCAST </a></li>
@@ -186,59 +186,67 @@
                         </div>
                     </div>
                 </section>
-                
-                
-            
             </div>
         </main>
 
-        <footer>
-            <section class="left">
+        <footer id="player">
+            <!--Album Playing-->
+        <div class="album-playing-container">
+            <img src="img/sinister.jpeg" alt="sinister" class="pointer">
+            <div class="album-name">
                 <ul>
-                    <li><img src="./img/sinister.jpeg" alt=""></li>
-                    <li class="info">
-                        <h6> Sinister</h6>
-                        <div>Brano Nome</div>
-                    </li>
-                    <li>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-folder"></i>
-                    </li>
+                    <li><a href="#">Sinister</a></li>
+                    <li><a href="#">Brano Nome</a></li>
                 </ul>
-            </section>
-
-            <section class="center">
+            </div>
+            <div class="album-icons">
                 <ul>
-                    <li><i class="fas fa-random"></i></li>
-                    <li><i class="fas fa-step-backward"></i></li>
-                    <li><i class="far fa-play-circle"></i></li>
-                    <li><i class="fas fa-step-forward"></i></li>
-                    <li><i class="fas fa-redo-alt"></i></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="far fa-folder"></i></a></li>
                 </ul>
+            </div>
+          </div>
+          <!--Album Playing End-->
+  
+          <!--Player Controller-->
+          <div class="player-controller-container">
+            <div class="player-controller">
+              <ul>
+                <li><a href="#"><i class="fas fa-random"></i></a></li>
+                <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                <li>  <a href="#"><i class="fas fa-redo-alt"></i></a></li>
+              </ul>
+            </div>
+            <div class="progressbar-and-number">
+              <span class="song-progress">0:25</span>
+              <div class="progress-bar">
+                <div class="partial-bar">
+                    <div class="point-bar"></div>
+                </div>
+              </div>
+              <span class="song-duration">4:35</span>
+            </div>
+          </div>
+          <!--Player Controller End-->
+  
+          <!--Right Controller-->
+          <div class="right-controller-container">
+            <div class="right-controller">
                 <ul>
-                    <li class="time">0:25</li>
-                    <li class="time-bar">
-                        <div class="barra">
-                            <div class="barra2"></div>
-                        </div>
-                    </li>
-                    <li class="time">4:35</li>
+                    <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
+                    <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+                    <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
                 </ul>
-            </section>
-            <section class="right">
-                <ul>
-                    <li><i class="fas fa-bars"></i></li>
-                    <li><i class="fas fa-desktop"></i></li>
-                    <li><i class="fas fa-volume-up"></i></li>
-                    <li>
-                        <div class="barra">
-                            <div class="barra2"></div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+            </div>
+            <div class="right-controller-bar">
+              <div class="right-controller-partial-bar">
+                <div class="point-bar"></div>
+              </div>
+            </div>
+          </div>
         </footer>
-        
     </div>
     
 </body>
