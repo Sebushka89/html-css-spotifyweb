@@ -1,3 +1,11 @@
+.fl{
+  float: left;
+}
+.clearfix{
+  display: table;
+  content: "";
+  clear: both;
+}
 .container-fluid{
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -163,17 +171,14 @@ button:hover{
 .cover{
     position: relative;
     cursor: pointer;
-    max-width: 230px;
 }
 .item{
     width: calc(100%/7);
-    min-width: 100px;
-    height: 100%;
     margin: 20px 15px;
     text-align: center;
 }
-.item .cover i{
-    font-size: 70px;
+.cover i{
+    font-size: 60px;
     color: white;
     position: absolute;
     top: 50%;
@@ -188,8 +193,7 @@ button:hover{
     opacity: 0.5;
 }
 .cover img{
-    max-width: 100%;
-    max-height: 230px;
+    width: 100%;
 }
 .cover-text{
     color: white;
@@ -337,10 +341,10 @@ ul li a{
     color: #1dd05d;
   }
   
-  .fa-random,
-  .fa-step-backward,
-  .fa-play-circle,
-  .fa-step-forward {
+  .player-controller .fa-random,
+  .player-controller .fa-step-backward,
+  .player-controller .fa-play-circle,
+  .player-controller .fa-step-forward {
     padding-right: 20px;
   }
   
