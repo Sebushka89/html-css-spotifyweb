@@ -170,6 +170,7 @@ button:hover{
     text-decoration: none;
     list-style: none;
     display: inline-block;
+    position: relative;
 }
 
 .music-nav {
@@ -177,6 +178,20 @@ button:hover{
     justify-content: center;
     color: gray;
     margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.barretta{
+  width: 25px;
+  height: 3px;
+  background-color: #1dd05d;
+  position: absolute;
+  left: 35%;
+  display: none;
+}
+
+.music-nav li:hover .barretta{
+  display: block;
 }
 
 .played-list {
